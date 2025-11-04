@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "name": "home",
+      "path": "/",
+      "method": "GET",
+      "controller": "CubaDevOps\\Flexi\\Modules\\Home\\Infrastructure\\Controllers\\HomeController",
+      "parameters": []
+    }
+  ]
+}
