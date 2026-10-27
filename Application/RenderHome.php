@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Home\Application;
+namespace Flexi\Modules\Home\Application;
 
 use Flexi\Contracts\Classes\PlainTextMessage;
 use Flexi\Contracts\Interfaces\DTOInterface;
 use Flexi\Contracts\Interfaces\HandlerInterface;
 use Flexi\Contracts\Interfaces\MessageInterface;
 use Flexi\Contracts\Interfaces\TemplateEngineInterface;
-use CubaDevOps\Flexi\Modules\Home\Domain\HomePageDTO;
+use Flexi\Modules\Home\Domain\HomePageDTO;
 
 class RenderHome implements HandlerInterface
 {

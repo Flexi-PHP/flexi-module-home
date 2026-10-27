@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Home\Domain;
+namespace Flexi\Modules\Home\Domain;
 
 use Flexi\Contracts\Interfaces\DTOInterface;
 

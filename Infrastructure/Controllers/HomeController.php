@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Home\Infrastructure\Controllers;
+namespace Flexi\Modules\Home\Infrastructure\Controllers;
 
 use Flexi\Contracts\Classes\HttpHandler;
 use Flexi\Contracts\Classes\Traits\FileHandlerTrait;
 use Flexi\Contracts\Interfaces\BusInterface;
-use CubaDevOps\Flexi\Modules\Home\Domain\HomePageDTO;
+use Flexi\Modules\Home\Domain\HomePageDTO;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
