@@ -19,7 +19,8 @@
   ],
   "require": {
     "php": ">=7.4",
-    "cubadevops/flexi-contracts": "@dev"
+    "flexi/contracts": "^5.2.1",
+    "cubadevops/flexi-module-ui": "^1.0"
   },
   "autoload": {
     "psr-4": {
@@ -39,7 +40,11 @@
       "provides": [
         "home-page",
         "landing-page"
-      ]
+      ],
+      "schema-version": 1,
+      "compatibility": {
+        "core": "^3.2"
+      }
     }
   }
 }
