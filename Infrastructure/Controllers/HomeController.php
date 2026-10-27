@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Home\Infrastructure\Controllers;
+namespace Flexi\Modules\Home\Infrastructure\Controllers;
 
-use CubaDevOps\Flexi\Contracts\Classes\HttpHandler;
-use CubaDevOps\Flexi\Contracts\Classes\Traits\FileHandlerTrait;
-use CubaDevOps\Flexi\Infrastructure\Bus\QueryBus;
-use CubaDevOps\Flexi\Modules\Home\Domain\HomePageDTO;
+use Flexi\Contracts\Classes\HttpHandler;
+use Flexi\Contracts\Classes\Traits\FileHandlerTrait;
+use Flexi\Contracts\Interfaces\BusInterface;
+use Flexi\Modules\Home\Domain\HomePageDTO;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
@@ -17,9 +17,9 @@ use Psr\Http\Message\ServerRequestInterface;
 class HomeController extends HttpHandler
 {
     use FileHandlerTrait;
-    private QueryBus $query_bus;
+    private BusInterface $query_bus;
 
-    public function __construct(ResponseFactoryInterface $response_factory, QueryBus $query_bus)
+    public function __construct(ResponseFactoryInterface $response_factory, BusInterface $query_bus)
     {
         parent::__construct($response_factory);
         $this->query_bus = $query_bus;

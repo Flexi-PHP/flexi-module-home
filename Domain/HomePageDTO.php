@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace CubaDevOps\Flexi\Modules\Home\Domain;
+namespace Flexi\Modules\Home\Domain;
 
-use CubaDevOps\Flexi\Contracts\Interfaces\DTOInterface;
+use Flexi\Contracts\Interfaces\DTOInterface;
 
 class HomePageDTO implements DTOInterface
 {

@@ -1,7 +1,7 @@
 {
-  "name": "cubadevops/flexi-module-home",
+  "name": "flexi/flexi-module-home",
   "description": "Home page module for Flexi Framework",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "flexi-module",
   "license": "MIT",
   "keywords": [
@@ -19,11 +19,15 @@
   ],
   "require": {
     "php": ">=7.4",
-    "cubadevops/flexi-contracts": "@dev"
+    "flexi/contracts": "^5.2.1",
+    "flexi/flexi-module-ui": "^2.0",
+    "psr/container": "^2.0",
+    "psr/http-message": "^2.0",
+    "psr/http-factory": "^1.0"
   },
   "autoload": {
     "psr-4": {
-      "CubaDevOps\\Flexi\\Modules\\Home\\": ""
+      "Flexi\\Modules\\Home\\": ""
     }
   },
   "extra": {
@@ -39,7 +43,11 @@
       "provides": [
         "home-page",
         "landing-page"
-      ]
+      ],
+      "schema-version": 1,
+      "compatibility": {
+        "core": "^3.2"
+      }
     }
   }
 }
