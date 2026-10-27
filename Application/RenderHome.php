@@ -28,7 +28,7 @@ class RenderHome implements HandlerInterface
         return new PlainTextMessage(
             $this->html_render->render(
                 $dto->get('template'),
-                ['doc_url' => 'https://flexi.cubadevops.com']
+                ['doc_url' => 'https://github.com/Flexi-PHP/flexi-core#readme']
             )
         );
     }
